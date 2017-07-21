@@ -7,10 +7,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.example.hugomocho.teste1.loginActivity">
+    tools:context="com.example.hugomocho.teste1.RegisterActivity">
 
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRegistarNome"
+        android:layout_marginBottom="10dp"
+        android:maxLength="16"/>
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ID"/>
@@ -18,36 +31,31 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textLoginID"
+        android:id="@+id/textRegistarID"
         android:layout_marginBottom="10dp"
-        android:maxLength="16"/>/>
+        android:maxLength="16"/><![CDATA[/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"/>
+    ]]>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textLoginPass"
+        android:id="@+id/textRegistarPassword"
         android:inputType="textPassword"
         android:layout_marginBottom="10dp"
         android:maxLength="16"/>/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/buttonLogin"
-        android:layout_marginBottom="10dp"/>
-
     <TextView
-        android:id="@+id/textRegistar"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
+        android:text="Password"/>
+
+    <Button
+        android:id="@+id/buttonRegistar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Registar"/>
 
 </LinearLayout>
